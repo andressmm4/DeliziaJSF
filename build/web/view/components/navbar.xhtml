@@ -1,0 +1,126 @@
+<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
+  <div class="container-fluid">
+    <div class="navbar-wrapper">
+      <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+      <span class="navbar-toggler-icon icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end">
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+        Registrar
+      </button>
+      &nbsp &nbsp &nbsp &nbsp
+      <form class="navbar-form">
+        <div class="input-group no-border">
+          <input type="text" value="" class="form-control" placeholder="Search...">
+          <button type="submit" class="btn btn-default btn-round btn-just-icon">
+            <i class="material-icons">search</i>
+            <div class="ripple-container"></div>
+          </button>
+        </div>
+      </form>
+
+      <ul class="navbar-nav">
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link" href="javscript:void(0)" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons">notifications</i>
+            <span class="notification">5</span>
+            <p class="d-lg-none d-md-block">
+              Some Actions
+            </p>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notifications">
+            <a class="dropdown-item" href="javascript:void(0)">Mike John responded to your email</a>
+            <a class="dropdown-item" href="javascript:void(0)">You have 5 new tasks</a>
+            <a class="dropdown-item" href="javascript:void(0)">You're now friend with Andrew</a>
+            <a class="dropdown-item" href="javascript:void(0)">Another Notification</a>
+            <a class="dropdown-item" href="javascript:void(0)">Another One</a>
+          </div>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="javascript:void(0)" id="userSelect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons">person</i>
+            <p class="d-lg-none d-md-block">
+              Perfil
+            </p>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userSelect">
+            <a class="dropdown-item" href="user.php">Perfil</a>
+            <a class="dropdown-item" id="logout" href="logout.php">Cerrar Seción</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nueva Reservacion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: #1a2035;">
+        <form>
+          <div class="form-row" >
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" >
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="">
+                  Check me out
+                  <span class="form-check-sign">
+                    <span class="check"></span>
+                  </span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
